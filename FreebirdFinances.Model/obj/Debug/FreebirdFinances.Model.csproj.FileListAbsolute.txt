@@ -1,0 +1,5 @@
+C:\Development\Knockout\New\FreebirdFinances\FreebirdFinances.Model\bin\Debug\FreebirdFinances.Model.dll
+C:\Development\Knockout\New\FreebirdFinances\FreebirdFinances.Model\bin\Debug\FreebirdFinances.Model.pdb
+C:\Development\Knockout\New\FreebirdFinances\FreebirdFinances.Model\obj\Debug\FreebirdFinances.Model.csprojResolveAssemblyReference.cache
+C:\Development\Knockout\New\FreebirdFinances\FreebirdFinances.Model\obj\Debug\FreebirdFinances.Model.dll
+C:\Development\Knockout\New\FreebirdFinances\FreebirdFinances.Model\obj\Debug\FreebirdFinances.Model.pdb

@@ -1,0 +1,43 @@
+﻿@model FreebirdFinances.Web.ViewModels.IncomeViewModel
+@using System.Activities.Expressions
+@using System.Web.Script.Serialization
+
+@{
+    ViewBag.Title = "Income Details";
+}
+
+@{ string data = new JavaScriptSerializer().Serialize(Model); }
+
+@section scripts
+{
+    <script src="~/Scripts/knockout-3.4.0.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <script src="~/Scripts/incomeviewmodel.js"></script>
+    <script type="text/javascript">
+        var incomeViewModel = new IncomeViewModel(@Html.Raw(data));
+        ko.applyBindings(incomeViewModel)
+    </script>
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p data-bind="text: MessageToClient"></p>
+
+<div>
+    <div>
+        <label>Income Period:</label>
+        <span data-bind="text: Period"></span>
+    </div>
+    <div>
+        <label>Total Income:</label>
+        <span data-bind="text: TotalIncome"></span>
+    </div>
+    <div>
+        <label>Tax Percent:</label>
+        <span data-bind="text: TaxPercent"></span>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
