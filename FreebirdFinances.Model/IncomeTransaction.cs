@@ -14,24 +14,25 @@ namespace FreebirdFinances.Model
         public double Gross { get; set; }
         public bool IsTaxable { get; set; }
         public bool IsEstimate { get; set; }
-        public double Tax { get; set; }
-        //{
-        //    get
-        //    {
-        //        // TODO: Must figure out how to reference parent to get tax percent.
-        //        if (IsTaxable)
-        //            return Gross * .20; // this will turn from .20 to tax percent
-        //        else
-        //            return 0;
-        //    }
-        //}
-        public double Net { get; set; }
-        //{
-        //    get
-        //    {
-        //        return Gross - Tax;
-        //    }
-        //}
+        public double Tax
+        {
+            get
+            {
+                if (IsTaxable)
+                    return Gross * IncomeGroup.TaxPercent; 
+                else
+                    return 0;
+            }
+            private set { }
+        }
+        public double Net
+        {
+            get
+            {
+                return Gross - Tax;
+            }
+            private set { }
+        }
         public int IncomeGroupId { get; set; }
         public IncomeGroup IncomeGroup { get; set; }
 

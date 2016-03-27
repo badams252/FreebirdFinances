@@ -41,7 +41,6 @@ namespace FreebirdFinances.Web.Controllers
             var incomeViewModel = new IncomeViewModel();
             incomeViewModel.Period = income.Period;
             incomeViewModel.TotalIncome = income.TotalIncome;
-            incomeViewModel.TaxPercent = income.TaxPercent;
             incomeViewModel.MessageToClient = "This originated from the View Model, rather than the model.";
 
             return View(incomeViewModel);
