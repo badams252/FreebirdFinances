@@ -1,9 +1,7 @@
 namespace FreebirdFinances.DataLayer.Migrations
 {
-    using System;
-    using System.Data.Entity;
+    using Model;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<FreebirdFinances.DataLayer.FreebirdContext>
     {
@@ -15,18 +13,104 @@ namespace FreebirdFinances.DataLayer.Migrations
 
         protected override void Seed(FreebirdFinances.DataLayer.FreebirdContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            context.Incomes.AddOrUpdate(
+                i => i.Period,
+                new Income
+                {
+                    Period = "March 2016",
+                    IncomeGroups =
+                    {
+                            new IncomeGroup
+                            {
+                                Name = "APGE",
+                                TaxPercent = 0,
+                                IncomeTransactions =
+                                {
+                                    new IncomeTransaction { Description = "BCA 1", Gross = 3500, IsEstimate = true, IsTaxable = false },
+                                    new IncomeTransaction { Description = "BCA 2", Gross = 3500, IsEstimate = true, IsTaxable = false }
+                                }
+                            },
+                            new IncomeGroup
+                            {
+                                Name = "PPG",
+                                TaxPercent = .2,
+                                IncomeTransactions =
+                                {
+                                    new IncomeTransaction { Description = "RSS 1", Gross = 1200, IsEstimate = true, IsTaxable = true },
+                                    new IncomeTransaction { Description = "RSS 2", Gross = 1200, IsEstimate = true, IsTaxable = true },
+                                    new IncomeTransaction { Description = "BCA 1", Gross = 200, IsEstimate = true, IsTaxable = true }
+                                }
+                            },
+                            new IncomeGroup
+                            {
+                                Name = "Contract Work",
+                                TaxPercent = 0,
+                                IncomeTransactions =
+                                {
+                                    new IncomeTransaction { Description = "Marice Zlotnik", Gross = 400, IsEstimate = true }
+                                }
+                            }
+                    }
+                },
+                new Income
+                {
+                    Period = "February 2016",
+                    IncomeGroups =
+                    {
+                            new IncomeGroup
+                            {
+                                Name = "PPG",
+                                TaxPercent = .2,
+                                IncomeTransactions =
+                                {
+                                    new IncomeTransaction { Description = "RSS 1", Gross = 1200, IsEstimate = true, IsTaxable = true },
+                                    new IncomeTransaction { Description = "RSS 2", Gross = 1200, IsEstimate = true, IsTaxable = true },
+                                    new IncomeTransaction { Description = "BCA 1", Gross = 200, IsEstimate = true, IsTaxable = true }
+                                }
+                            },
+                            new IncomeGroup
+                            {
+                                Name = "Contract Work",
+                                TaxPercent = 0,
+                                IncomeTransactions =
+                                {
+                                    new IncomeTransaction { Description = "Marice Zlotnik", Gross = 400, IsEstimate = true }
+                                }
+                            }
+                    }
+                },
+                new Income
+                {
+                    Period = "January 2016",
+                    IncomeGroups =
+                    {
+                            new IncomeGroup
+                            {
+                                Name = "PPG",
+                                TaxPercent = .2,
+                                IncomeTransactions =
+                                {
+                                    new IncomeTransaction { Description = "RSS 1", Gross = 1200, IsEstimate = true, IsTaxable = true },
+                                    new IncomeTransaction { Description = "RSS 2", Gross = 1200, IsEstimate = true, IsTaxable = true },
+                                    new IncomeTransaction { Description = "BCA 1", Gross = 200, IsEstimate = true, IsTaxable = true }
+                                }
+                            },
+                            new IncomeGroup
+                            {
+                                Name = "Contract Work",
+                                TaxPercent = 0,
+                                IncomeTransactions =
+                                {
+                                    new IncomeTransaction { Description = "Marice Zlotnik", Gross = 400, IsEstimate = true }
+                                }
+                            }
+                    }
+                },
+                new Income
+                {
+                    Period = "December 2015",
+                }
+            );
         }
     }
 }

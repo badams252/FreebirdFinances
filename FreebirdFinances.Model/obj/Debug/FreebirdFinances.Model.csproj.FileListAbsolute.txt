@@ -3,3 +3,8 @@ C:\Development\Knockout\New\FreebirdFinances\FreebirdFinances.Model\bin\Debug\Fr
 C:\Development\Knockout\New\FreebirdFinances\FreebirdFinances.Model\obj\Debug\FreebirdFinances.Model.csprojResolveAssemblyReference.cache
 C:\Development\Knockout\New\FreebirdFinances\FreebirdFinances.Model\obj\Debug\FreebirdFinances.Model.dll
 C:\Development\Knockout\New\FreebirdFinances\FreebirdFinances.Model\obj\Debug\FreebirdFinances.Model.pdb
+C:\GitHub\FreebirdFinances\FreebirdFinances.Model\bin\Debug\FreebirdFinances.Model.dll
+C:\GitHub\FreebirdFinances\FreebirdFinances.Model\bin\Debug\FreebirdFinances.Model.pdb
+C:\GitHub\FreebirdFinances\FreebirdFinances.Model\obj\Debug\FreebirdFinances.Model.csprojResolveAssemblyReference.cache
+C:\GitHub\FreebirdFinances\FreebirdFinances.Model\obj\Debug\FreebirdFinances.Model.dll
+C:\GitHub\FreebirdFinances\FreebirdFinances.Model\obj\Debug\FreebirdFinances.Model.pdb

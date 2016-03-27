@@ -26,3 +26,15 @@ C:\Development\Knockout\FreebirdFinances\FreebirdFinances.DataLayer\obj\Debug\Fr
 C:\Development\Knockout\FreebirdFinances\FreebirdFinances.DataLayer\obj\Debug\FreebirdFinances.DataLayer.csproj.GenerateResource.Cache
 C:\Development\Knockout\FreebirdFinances\FreebirdFinances.DataLayer\obj\Debug\FreebirdFinances.DataLayer.dll
 C:\Development\Knockout\FreebirdFinances\FreebirdFinances.DataLayer\obj\Debug\FreebirdFinances.DataLayer.pdb
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\bin\Debug\FreebirdFinances.DataLayer.dll.config
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\bin\Debug\FreebirdFinances.DataLayer.dll
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\bin\Debug\FreebirdFinances.DataLayer.pdb
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\bin\Debug\EntityFramework.dll
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\bin\Debug\FreebirdFinances.Model.dll
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\bin\Debug\FreebirdFinances.Model.pdb
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\bin\Debug\EntityFramework.xml
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\obj\Debug\FreebirdFinances.DataLayer.csprojResolveAssemblyReference.cache
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\obj\Debug\FreebirdFinances.DataLayer.dll
+C:\GitHub\FreebirdFinances\FreebirdFinances.DataLayer\obj\Debug\FreebirdFinances.DataLayer.pdb
