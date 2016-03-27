@@ -12,7 +12,6 @@ namespace FreebirdFinances.Web.ViewModels
 
         public string Period { get; set; }
         public double TotalIncome { get; set; }
-        public double TaxPercent { get; set; }
         public ICollection<IncomeGroup> IncomeGroups { get; set; }
 
         public string MessageToClient { get; set; }

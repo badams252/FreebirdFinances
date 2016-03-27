@@ -56,7 +56,7 @@ namespace FreebirdFinances.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Period,TotalIncome,TaxPercent")] Income income)
+        public ActionResult Create([Bind(Include = "Id,Period,TotalIncome")] Income income)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace FreebirdFinances.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Period,TotalIncome,TaxPercent")] Income income)
+        public ActionResult Edit([Bind(Include = "Id,Period,TotalIncome")] Income income)
         {
             if (ModelState.IsValid)
             {

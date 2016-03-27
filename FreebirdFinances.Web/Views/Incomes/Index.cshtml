@@ -17,9 +17,6 @@
         <th>
             @Html.DisplayNameFor(model => model.TotalIncome)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TaxPercent)
-        </th>
         <th></th>
     </tr>
 
@@ -30,9 +27,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.TotalIncome)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TaxPercent)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
