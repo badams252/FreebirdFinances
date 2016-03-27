@@ -8,18 +8,31 @@ namespace FreebirdFinances.Model
 {
     public class Income
     {
+        public Income()
+        {
+            IncomeGroups = new List<IncomeGroup>();
+        }
+
         public int Id { get; set; }
 
         public string Period { get; set; }
         public double TotalIncome { get; set; }
+        //TODO: get TotalIncome working
         //{
         //    get
         //    {
-        //        double sum = 0;
+        //        double sum = 9;
         //        foreach (var ig in IncomeGroups)
         //        {
+        //            sum += 0;
         //            if (ig.IncomeTransactions.Any())
-        //                sum += ig.IncomeTransactions.Sum(x => x.Net);
+        //                foreach (var it in ig.IncomeTransactions)
+        //                {
+        //                    if (it != null)
+        //                        sum += it.Net;
+        //                    else
+        //                        sum += 0;
+        //                }
         //            else
         //                sum += 0;
         //        }
@@ -27,8 +40,6 @@ namespace FreebirdFinances.Model
         //    }
         //    private set { }
         //}
-        public double TaxPercent { get; set; }
         public ICollection<IncomeGroup> IncomeGroups { get; set; }
-
     }
 }
